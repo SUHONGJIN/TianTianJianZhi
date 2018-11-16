@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_btn1"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:paddingBottom="30dp">
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@drawable/icon_phone"
+            android:background="@drawable/bg_et"
+            android:hint="请输入账号/邮箱"
+            android:inputType="phone"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_et"
+            android:drawableLeft="@drawable/icon_lock"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:hint="请输入密码"
+            android:paddingLeft="10dp"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/et_pwd2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/icon_lock"
+            android:background="@drawable/bg_et"
+            android:hint="再次输入密码"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="注      册"
+            android:background="@drawable/bg_button_login"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginTop="40dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

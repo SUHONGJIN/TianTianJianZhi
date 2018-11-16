@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.xmsj.tiantianjianzhi"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "2449a643a9cee2fa3d4224fb", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    // **兼容Android6.0系统所需，如果这句话报错，可在dependencies标签下使用compile 'cn.bmob.android:http-legacy:1.0'**
+    useLibrary 'org.apache.http.legacy'
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/okhttp-2.7.0.jar')
+    // 此处以JPush 3.1.5 版本为例。
+    // 此处以JCore 1.2.3 版本为例。
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:cardview-v7:24.2.0'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:design:26.+'
+    compile 'com.longsh:OptionFrame:1.0.0'
+    compile 'cn.bmob.android:bmob-sdk:3.6.3'
+    compile 'cn.bmob.android:http-legacy:1.0'
+    compile 'com.makeramen:roundedimageview:2.3.0'
+    compile 'com.jwenfeng.pulltorefresh:library:1.0.3'
+    compile 'com.github.maning0303:MNUpdateAPK:V1.1.8'
+    compile 'cn.jiguang.sdk:jpush:3.1.5'
+    compile 'cn.jiguang.sdk:jcore:1.2.3'
+    testCompile 'junit:junit:4.12'
+}
