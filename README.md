@@ -8,3 +8,7 @@
 ![Image text](https://github.com/SUHONGJIN/TianTianJianZhi/blob/master/image/Screenshot_2018-11-20-22-22-01-849_com.hwsj.tiant.png)
 ![Image text](https://github.com/SUHONGJIN/TianTianJianZhi/blob/master/image/Screenshot_2018-11-20-22-21-57-046_com.hwsj.tiant.png)
 
+这是Bmob后台:
+
+![Image text](https://github.com/SUHONGJIN/TianTianJianZhi/blob/master/image/%E5%90%8E%E5%8F%B0.PNG)
+
