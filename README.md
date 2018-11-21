@@ -10,5 +10,5 @@
 
 这是Bmob后台:
 
-![Image text](https://github.com/SUHONGJIN/TianTianJianZhi/blob/master/image/%E5%90%8E%E5%8F%B0.PNG)
+![Image text](https://github.com/SUHONGJIN/TianTianJianZhi/blob/master/image/ht.PNG)
 
